@@ -46,6 +46,8 @@
     theSubhead.firstChild.nodeValue = objectIndex.headline;
     theSeasonText.firstChild.nodeValue = objectIndex.text;
 
+    console.log(this.id);
+
     appliedClass = this.id;
   }
 
