@@ -26,9 +26,15 @@
       //add a source
       newSubImg.src = "images/" + objectIndex.images[index];
       //add it to the page
+
+      //add some data to the thumbnail
+      newSubImg.dataset.index = index;
+
+      //add some event handling
+      newSubImg.addEventListener('click', function() { popLightbox(index, objectIndex); }, false);
+
       subImages.appendChild(newSubImg);
     });
-
 
 
 
@@ -54,9 +60,37 @@
     element.addEventListener('click', changeElements, false);
   });
 
-  theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
-  theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
-  theHeading.classList.add('spring');
+  //theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
+//  theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
+  //theHeading.classList.add('spring');
+
+  function popLightbox(currentIndex, currentObject) {
+    debugger;
+    //quick scroll fix to make the lightbox cover everything
+    window.scrollTo(0, 0);
+
+    let lightbox = document.querySelector('.lightbox');
+    let lightboxImg = lightbox.querySelector('img');
+    let lightboxDesc = lightbox.querySelector('p');
+    let lightboxclose = lightbox.querySelector('.close-lightbox');
+
+    //put the data in the lightbox elements
+    lightboxImg.src = "images/" + currentObject.images[currentIndex];
+    lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+
+    lightbox.style.display = "block";
+
+
+    //wire up the close button
+    lightboxclose.addEventListener('click', closeLightbox, false);
+  }
+    function closeLightbox() {
+      debugger;
+      //reset and close the lightbox - empty the contents, reset the image src and
+      //the description text to nothing
+    }
+
+  changeElements.call(document.querySelector('#spring'));
 
 
 
