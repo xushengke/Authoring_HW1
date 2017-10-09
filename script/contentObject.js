@@ -6,7 +6,20 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
+			],
+
+			imageDescription : [
+				'There are some butterflies',
+				'This is a giant mutant chicken',
+				'This is a bird',
+				'There is a girl',
+				'There is a white creature',
+				'There is a heart tree'
 			]
 		},
 
@@ -17,7 +30,20 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+			],
+
+			imageDescription : [
+				'There are some chairs',
+				'This is a dog',
+				'This is a pair of yellow slide',
+				'There is an umbrella',
+				'There are some people',
+				'There is a swimming pool'
 			]
 		},
 
@@ -28,7 +54,20 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
+			],
+
+			imageDescription : [
+				'There is a path',
+				'This are some pumpkins',
+				'This are three children',
+				'There are some leaves',
+				'There are some bikes',
+				'There is an apple'
 			]
 		},
 
@@ -39,7 +78,20 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
+			],
+
+			imageDescription : [
+				'There are many trees',
+				'This is a snowman',
+				'This is a snow',
+				'There is a horse',
+				'There are some clouds',
+				'There is a snowman with a flower'
 			]
 		}
 	};
