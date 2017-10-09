@@ -31,7 +31,7 @@
       newSubImg.dataset.index = index;
 
       //add some event handling
-      newSubImg.addEventListener('click', function() { popLightbox(index, objectIndex); }, false);
+      newSubImg.addEventListener('click', function() {popLightbox(index, objectIndex); }, false);
 
       subImages.appendChild(newSubImg);
     });
@@ -84,10 +84,19 @@
     //wire up the close button
     lightboxclose.addEventListener('click', closeLightbox, false);
   }
-    function closeLightbox() {
+
+
+    function closeLightbox(currentIndex, currentObject) {
       debugger;
       //reset and close the lightbox - empty the contents, reset the image src and
       //the description text to nothing
+      let lightbox = document.querySelector('.lightbox');
+      let lightboxImg = lightbox.querySelector('img');
+      let lightboxDesc = lightbox.querySelector('p');
+      lightbox.style.display = "none";
+      lightboxImg.removeAttribute('src');
+      lightboxDesc.innerHTML = "";
+
     }
 
   changeElements.call(document.querySelector('#spring'));

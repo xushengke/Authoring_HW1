@@ -63,8 +63,8 @@ section { margin-top: 15px; background-color: #FFF; }
 	position: absolute;
 	display: none;
 	top: 0;
-	left: 0;
-	width: 100%;
+	left: 10%;
+	width: 80%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.85);
 	z-index: 5000;
@@ -72,12 +72,27 @@ section { margin-top: 15px; background-color: #FFF; }
 
 .lightbox-img {
 	display: block;
+	margin: auto;
+	margin-top: 150px;
+	width: 50%;
+}
+
+.lightbox-desc {
+	text-align: center;
+	color: yellow;
+	font-size: 25px;
 }
 
 .close-lightbox {
 	float: right;
-	margin-right: 18px;
-	margin-top: 12px;
+	margin-right: 250px;
+	margin-top: 90px;
 	font-size: 2em;
 	cursor: pointer;
+	color: yellow;
+}
+
+.close-lightbox:hover {
+	transform: rotate(90deg);
+	transition: all .5s;
 }
