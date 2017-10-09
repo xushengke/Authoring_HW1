@@ -61,9 +61,9 @@
   });
 
   //theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
+  //this is a good thing
 //  theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
   //theHeading.classList.add('spring');
-  //this is the unchanged part
 
   function popLightbox(currentIndex, currentObject) {
     debugger;
@@ -100,9 +100,9 @@
 
     }
 
-    //i can see this changes
 
   changeElements.call(document.querySelector('#spring'));
+  //this is the change
 
 
 
