@@ -80,6 +80,7 @@
     lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 
     lightbox.style.display = "block";
+    document.body.style.overflow = 'hidden';
 
 
     //wire up the close button
@@ -97,6 +98,7 @@
       lightbox.style.display = "none";
       lightboxImg.removeAttribute('src');
       lightboxDesc.innerHTML = "";
+      document.body.style.overflow = '';
 
     }
 
