@@ -52,6 +52,8 @@
     theSubhead.firstChild.nodeValue = objectIndex.headline;
     theSeasonText.firstChild.nodeValue = objectIndex.text;
 
+    console.log(this.id);
+
     appliedClass = this.id;
   }
 
@@ -61,6 +63,7 @@
   });
 
   //theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
+ lightbox
   //this is a good thing
 //  theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
   //theHeading.classList.add('spring');
@@ -106,7 +109,15 @@
   changeElements.call(document.querySelector('#spring'));
   //this is the change
 
+  //theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
+  //theHeading.classList.add('spring');
 
+  //document.querySelector('#spring').click();
+master
+
+//more programmy type way to do the same thing
+
+ changeElements.call(document.querySelector('#spring'));
 
 
 
