@@ -98,7 +98,7 @@
       lightbox.style.display = "none";
       lightboxImg.removeAttribute('src');
       lightboxDesc.innerHTML = "";
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
 
     }
 
